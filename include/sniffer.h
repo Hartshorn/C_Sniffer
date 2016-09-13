@@ -7,8 +7,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <time.h>
 
-#include <pcap/pcap.h>
+#include <pcap.h>
 
 #define LINE_LEN    16
 

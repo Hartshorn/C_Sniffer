@@ -26,7 +26,7 @@ pcap_if_t* interface_handler(pcap_if_t *alldevices, unsigned char *errbuf) {
     int i, interface_num;
     pcap_if_t *device;
     
-    if (pcap_findalldevs_ex(PCAP_SRC_IF_STRING, NULL, &alldevices, errbuf) == -1) {
+    if (pcap_findalldevs(&alldevices, errbuf) == -1) {
         fprintf(stderr, "Error in pcap_findalldevs_ex: %s\n", errbuf);
     }
     
